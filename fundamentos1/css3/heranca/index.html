@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGestte Herança</title>
+    <style>
+        div {
+            color: blue;
+            border: 2px solid black;
+        }
+        
+        div ul li {
+            color: red;
+        }
+
+        div ul {
+            border: inherit;  /* Irá ser herdado a propriedade do pai */
+        }
+    </style>
+</head>
+<body>
+    <!-- Os estilos passam como herança para os elementos filhos-->
+    <div>   
+        <h1>Planetas</h1>
+        <ul>
+            <li>Terra</li>
+            <li>Marte</li>
+            <li>Júpiter</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background-color: grey;
+    background-image: url(foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    background-color: rgba(211, 211, 211, 0.13);
+    color: purple;
+    font-size: 50px;
+    /*
+    border-color: yellow;
+    border-width: 2px;
+    border-style: solid;
+    */
+    border: 2px solid yellow;
+}
+
+li {
+    color: rgb(22, 22, 22);
+}
+
+.red-text {
+    color: red;
+}
+
+#big-text {
+    font-size: 30px;
+}

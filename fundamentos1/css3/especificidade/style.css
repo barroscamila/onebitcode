@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    color: blue;
+}
+
+h1#testeh1 { 
+    color: yellow; 
+}
+
+h1 {
+    color: green;
+}
+
+li {
+    color: black;
+}
+
+li.testeclass {
+    color: orange;
+}
+
+li#testeid {  /* Cor darkmagenda tem prioridade (ID) */
+    color: darkmagenta;
+}
+
+p {  /* Cor brown tem prioridade pois houve empate e o ultimo seletor declarado é o que vale */
+    color: brown;
+}
