@@ -16,12 +16,33 @@ function listarVagas() {
     if(vagas.length === 0) {
         alert("Não há vagas disponíveis no momento.")
     } else {
-        // ...
+        vagas.forEach(function (vagas) {
+             alert(
+                "\nNome da vaga: " + vagas.nome +
+                "\nDescrição: " + vagas.descricao +
+                "\nData limite para se candidatar: " + vagas.data 
+            )
+        })
     }
 }
 
 function criarVaga() {
-
+    let nomeNovaVaga = prompt("Nome da vaga:")
+    let descricaoNovaVaga = prompt("Descrição da vaga:")
+    let dataNovaVaga = prompt("Data limite para candidatura na vaga: [xx/xx/xxxx]")
+    let novaVaga = {nome: nomeNovaVaga, descricao: descricaoNovaVaga, data: dataNovaVaga}
+    let confirmar = confirm(
+        "Confirma os dados abaixo?" +
+        "\nNome da vaga: " + novaVaga.nome +
+        "\nDescrição: " + novaVaga.descricao +
+        "\nData limite para se candidatar: " + novaVaga.data 
+    ) 
+    if (confirmar) {
+       vagas.push(novaVaga)
+    } else {
+        // ...
+    }
+   
 }
 
 function visualizarVaga() {
@@ -49,6 +70,8 @@ function executar() {
                 listarVagas()
                 break
             case "2":
+                criarVaga()
+                //alert(vagas.length)
                 break
             case "3":
                 break
