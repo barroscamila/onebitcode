@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Desenvolvedores</title>
+    <script src="./cadastro-devs.js" defer></script>
+</head>
+<body>
+    <h1>Exercício 12 - Cadastro de Devs</h1>
+    <hr>
+    
+    <h2>Formulário de cadastro:</h2>
+    <form id="devForm">
+        <label for="fullname">Nome do(a) Desenvolvedor(a):</label>
+        <input type="text" name="fullname" id="fullname" placeholder="inserir nome completo"><br><br>
+        
+        <label>Tecnologias:</label><br>
+        <button type="button" id="addTechBtn">Adicionar nova tecnologia</button>
+        <ul id="stackInputs"></ul><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
