@@ -36,15 +36,17 @@ addTechBtn.addEventListener("click", function (ev){
     const id1 = "expRadio-" + rowIndex + ".1"
     const expRadio1 = createInput(id1, "0-2 anos", "techExp-" + rowIndex, "radio")
     const expLabel1 = createLabel("0-2 anos", id1)
+
     const id2 = "expRadio-" + rowIndex + ".2"
     const expRadio2 = createInput(id2, "3-4 anos", "techExp-" + rowIndex, "radio")
     const expLabel2 = createLabel("3-4 anos", id2)
+
     const id3 = "expRadio-" + rowIndex + ".3"
     const expRadio3 = createInput(id3, "5 ou mais anos", "techExp-" + rowIndex, "radio")
     const expLabel3 = createLabel("5 ou mais anos", id3)
 
     const removeRowBtn = document.createElement("button")
-    removeRowBtn.type = "button" // para especificar que não é submit
+    removeRowBtn.type = "button" // é preciso especificar que não é do tipo submit
     removeRowBtn.innerText = "Remover"
     removeRowBtn.addEventListener("click", function () {
         stackInputs.removeChild(newRow)
@@ -60,5 +62,28 @@ addTechBtn.addEventListener("click", function (ev){
 form.addEventListener("submit", function (ev){
     ev.preventDefault()
 
-    //parei em 10:24 
+    //capturar valores do form:
+    const fullnameInput = document.getElementById("fullname").value
+    const inputRows = document.querySelectorAll(".inputRow") //pegar todas as linhas
+
+    let technologies = []
+    inputRows.forEach(function (row) {
+        // #rowId input[name="techName"]  -> pegando o input da linha específica 
+        const techName = document.querySelector("#" + row.id + " input[name='techName']").value
+        // #rowId input[type="radio"]:checked -> pegando o input radio marcado
+        const techExp = document.querySelector("#" + row.id + " input[type='radio']:checked").value
+        technologies.push({ name: techName, exp: techExp })
+    })
+
+    const newDev = { fullname: fullnameInput, technologies: technologies }
+    developers.push(newDev)
+    alert("Dev cadastrato com sucesso!")
+
+    //limpando os campos do formulário:
+    fullnameInput.value = ''
+    inputRows.forEach(function (row) {
+        row.remove()
+    })
+
+    console.log(developers)
 })
