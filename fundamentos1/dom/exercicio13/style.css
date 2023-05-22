@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+}
+
+#gameBoard {
+    background-color: #232323;
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem; /* 1rem = 16px (normalmente) */
+    grid-template-rows: 6rem 6rem 6rem;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    max-width: 19rem; /* 6*3 + .5*2 = 19 */
+}
+
+#gameBoard span {
+    background-color: #ddd;
+    display: grid;
+    place-content: center; /* O conteúdo do elemento ficará centralizado (utilizando display grid)*/
+    font-size: 5rem;
+}
+
+#gameBoard span.win {
+    background-color: #52d16e;   
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
