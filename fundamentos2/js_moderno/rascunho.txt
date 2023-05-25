@@ -1,0 +1,33 @@
+>> Rascunho das aulas...
+---------------------------------------------
+
+# Atualizações do JavaScript
+
+-> ES1: especificações iniciais do JS
+-> ES3: utilizada por vários anos (ES4 nunca foi lançada)
+-> ES5: 2009
+-> ES6-2015: vem sendo atualizado anualmente desde então: ES2016, ES2017, ES2018 etc
+
+# Compatibilidade de recursos
+
+-> Os navegadores possuem interpretadores que interpretam o JS
+-> Nem sempre os recursos mais novos do JS (advindos das novas atualizações) estão disponíveis nos navegadores. Ou podem demorar para ficarem compatíveis, ou então nunca são implementados
+
+# Template Literals
+
+-> Nova forma de declarar strings (crase)
+-> Permite interpolação de strings e quebra de linha automática
+
+# Arrow Functions
+
+-> Nova forma de escrever funções anônimas
+-> Não utiliza a palavra function, utiliza '=>' após os parâmetros
+-> Não possui seus próprios this, arguments, super, new.target
+-> Também permite retornar diretamente uma expressão, caso seja de uma linha única
+
+# Desestruturação de Objetos e Arrays
+
+-> Permite criar variáveis a partir de propriedades de um objeto ou elementos de um Arrays
+-> Objetos: as variáveis criadas vão possuir o mesmo nome da propriedade do objeto
+-> Arrays: pode-se atribuir qualquer nome para as variáveis criadas
+-> 
