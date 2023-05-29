@@ -1,5 +1,5 @@
 >> Rascunho das aulas...
----------------------------------------------
+-------------------------
 
 # Atualizações do JavaScript
 
@@ -30,4 +30,24 @@
 -> Permite criar variáveis a partir de propriedades de um objeto ou elementos de um Arrays
 -> Objetos: as variáveis criadas vão possuir o mesmo nome da propriedade do objeto
 -> Arrays: pode-se atribuir qualquer nome para as variáveis criadas
--> 
+
+# Operador spread
+
+-> Permite separar os elementos de um objeto iterável, como um array ou uma strings
+-> Aplicabilidade: passar vários parâmetros de uma única vez; clonar objetos iteráveis; fazer manipulações sem afetar o objeto original, transformar strings em arrays etc.
+
+# Parêmetros Rest
+
+-> Permite que uma função receba qualquer número de parâmetros
+-> Também permite manipular esses parâmetros como um array
+-> Os parâmetros Rest devem ser declarados por ultimo na função
+
+# Encadeamento Opcional
+
+-> Permite acessar propriedades internas sem lançar erros, mesmo quando uma propriedade é nullish (null ou undefined)
+-> Funciona de forma similar ao encadeamendo normal (operador "."), porém é escrito com "?."
+
+# Operador de Coalescência Nula
+
+-> Operador lógico ("??") que serve para testar se os valores são null e undefined, caso sim, retorna o valor a direita do operador.
+
