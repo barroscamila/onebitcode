@@ -1,5 +1,4 @@
 >> Rascunho das aulas...
--------------------------
 
 # Atualizações do JavaScript
 
@@ -51,3 +50,17 @@
 
 -> Operador lógico ("??") que serve para testar se os valores são null e undefined, caso sim, retorna o valor a direita do operador.
 
+
+*** Introdução ao Módulos
+
+# Módulos
+
+-> Módulos são agrupamentos de códigos com funcionalidades distintas, podendo serem compartilhados, adicionados ou removidos.
+-> Os módulos permitem aplicar o JS de forma mais organizada.
+-> Motivos para utilizar:
+    - Manutenibilidade (facilita manutenção)
+    - Namespacing (evita conflito de nomes)
+    - Reusabilidade (reaproveitamento dos códigos)
+-> Formas de utilizar
+    - CommonJS  (forma tradicional, não funciona nos navegadores)
+    - ES Modules (JS moderno) 
