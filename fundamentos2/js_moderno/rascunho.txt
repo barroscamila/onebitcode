@@ -51,9 +51,9 @@
 -> Operador lógico ("??") que serve para testar se os valores são null e undefined, caso sim, retorna o valor a direita do operador.
 
 
-*** Introdução ao Módulos
+*** Módulos
 
-# Módulos
+# Introdução aos Módulos
 
 -> Módulos são agrupamentos de códigos com funcionalidades distintas, podendo serem compartilhados, adicionados ou removidos.
 -> Os módulos permitem aplicar o JS de forma mais organizada.
@@ -64,3 +64,31 @@
 -> Formas de utilizar
     - CommonJS  (forma tradicional, não funciona nos navegadores)
     - ES Modules (JS moderno) 
+
+## npm (node package manager)
+
+-> Gerenciador de pacotes do Node.JS (node.js é a ferramenta que permite executar o JS fora do navegador)
+-> o npm é uma ferramenta que permite:
+    - Compartilhar os módulos na internet
+    - Baixar módulos para o nosso projeto
+    - Gerenciar os módulos instalados no nosso projetos
+-> OBS: Princípio DRY = Don't Repeat Yourself
+-> Informações importantes:
+    - package.json: arquivo principal do npm, nele está incluso informações essenciais do projeto
+    - package-lock.json: arquivo que define às versões exatas dos pacotes instalados
+    - node_modules: pasta onde estão os pacotes instalados e respectivos arquivos/códigos
+    - Instalando os pacotes:
+        - dependecies: npm install --save nameDependencies 
+        - devDepencencies: npm install --save--dev nameDevDependencies -> pacotes de desenvolvimento, os quais podem ser excluídos do projeto posteriormente
+        - global dependecies: npm install --global nameDependencies
+    - Para remover: npm uninstall nameDependecies
+
+## arquivos .json (javascript object notation)
+
+-> é um formato de arquivo utilizado para troca de dados
+-> notação semelhante ao objetos do javascript (com algumas diferenças)
+-> todas as linguagens modernas possuem ferramentas para suportar o arquivo .json, ou seja, é amplamento utilizado
+-> Manipular arquivos .json no JS:
+    - JSON.parse() // converte uma string para objeto json-Compatible
+    - JSON.stringify() // converte um objeto json-compatible para string
+    
