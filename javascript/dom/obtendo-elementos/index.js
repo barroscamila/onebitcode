@@ -1,6 +1,6 @@
 function show() {
     const contactList = document.getElementById("contact-list")
-    console.log(contactList)  // Retorna o elemento com a ID específica
+    console.log(contactList)  // Retorna o elemento com o ID especifico
 
     const listElements = document.getElementsByTagName("li")
     console.log(listElements)  // Retorna uma HTMLColletion
@@ -15,6 +15,6 @@ function show() {
     console.log(contact1) // Retorna uma NodeList
 
     const firstContact = document.querySelector("#contact-list > li > label")
-    console.log(firstContact) // Retorna o primeiro elemento que ele encontrar com as características especificadas
+    console.log(firstContact) // Caso tenha mais de um elemento na busca, o querySelecto irá retornar apenas o primeiro elemento que ele encontrar com as características especificadas
 }
 
