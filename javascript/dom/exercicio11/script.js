@@ -13,6 +13,7 @@ function addPlayer() {
         playerItem.innerText = position + ": " + name + " (" + number + ")"
         teamList.appendChild(playerItem)
 
+        // limpar os campos posicao, nome e numero 
         document.getElementById("position").value = ""
         document.getElementById("name").value = ""
         document.getElementById("number").value = ""
@@ -20,13 +21,13 @@ function addPlayer() {
 }
 
 function removePlayer() {
-    const number = document.getElementById("numberToRemove").value
-    const playerToRemove = document.getElementById("player-" + number)
+    const number = document.getElementById("numberToRemove").value // identificando o numero do jogador a ser removido
+    const playerToRemove = document.getElementById("player-" + number) // selecionando o jogador a ser removido pelo id
 
     const confirmation = confirm("Desejar remover o jogador " + playerToRemove.innerText + "?")
 
     if (confirmation) {
-        //document.getElementById("teamList").removeChild(playerToRemove)
+        //document.getElementById("teamList").removeChild(playerToRemove) // uma forma de remover
         playerToRemove.remove() // outra forma de remover
         document.getElementById("numberToRemove").value = ""
     }

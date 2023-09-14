@@ -1,5 +1,5 @@
 function addContact() {
-    const contactSection = document.getElementById("contacts-list")
+    const contactSection = document.getElementById("contacts-list") 
 
     const h3 = document.createElement("h3")
     h3.innerText = "Contato"
@@ -14,7 +14,7 @@ function addContact() {
     nameInput.id = "fullname"
     nameLi.appendChild(nameInput)
     ul.appendChild(nameLi)
-    ul.appendChild(document.createElement("br"))
+    ul.appendChild(document.createElement("br")) // inserir quebra de linha
 
     const phoneLi = document.createElement("li")
     phoneLi.innerHTML = "<label for='phonenumber'>Telefone: </label>"
@@ -36,8 +36,7 @@ function addContact() {
     ul.appendChild(addressLi)
     ul.appendChild(document.createElement("br"))
 
-    contactSection.append(h3, ul)
-    // o append permite adicionar vários elementos ao invés de dicionar um por um
+    contactSection.append(h3, ul) // o append permite adicionar vários elementos ao invés de dicionar um por um
 }
 
 function removeContact() { //Remover o último elemento
@@ -46,6 +45,7 @@ function removeContact() { //Remover o último elemento
     const titles = document.getElementsByTagName("h3")
     const contacts = document.getElementsByTagName("ul")
 
+    // remover o ultimo contato (-1 pois as listas comecam em 0)
     contactSection.removeChild(titles[titles.length - 1])
     contactSection.removeChild(contacts[contacts.length - 1])
 }

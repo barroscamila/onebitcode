@@ -1,7 +1,7 @@
 function addInput() {
-    const ul = document.getElementById("inputs")
+    const ul = document.getElementById("inputs") // selecionar a ul do html
 
-    const newLi = document.createElement("li")
+    const newLi = document.createElement("li") // criando um item da ul
     newLi.className = "list-item"
     newLi.innerText = "Novo input: "
 
@@ -12,3 +12,4 @@ function addInput() {
     newLi.appendChild(newInput)
     ul.appendChild(newLi)
 }
+
