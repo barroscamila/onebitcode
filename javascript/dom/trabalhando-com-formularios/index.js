@@ -1,14 +1,12 @@
 /* 
-    O comportamento padrão dos formulários (submit) é atualizar a página e enviar os dados inseridos pelo usuário.
-
-    Como impedir esse comportamento:
+   OBS: O comportamento padrão dos formulários (submit) é atualizar a página e enviar os dados inseridos pelo usuário. 
 */
 
 
 const form = document.getElementById("orderForm")
 
 form.addEventListener("submit", function (ev){
-    ev.preventDefault() // previne o comportamento padrão
+    ev.preventDefault() // previne o comportamento padrão do evento
     
     const name = document.querySelector("input[name='name']").value
     const address = document.querySelector("input[name='address']").value
@@ -21,6 +19,7 @@ form.addEventListener("submit", function (ev){
         salad += "- " + item.value + "\n"
     })
 
+    /*
     console.log({
         name,
         address,
@@ -29,6 +28,7 @@ form.addEventListener("submit", function (ev){
         salad,
         observations
     })
+    */
 
     alert(
         "Pedido Realizado!" +
