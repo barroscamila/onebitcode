@@ -3,10 +3,10 @@ function register(element) {
     const password = element.children.password.value
     const passwordConfirmation = element.children.passwordConfirmation.value
     // o '.children' serve para referenciar um elemento filho
+    //console.log({ username, password, passwordConfirmation })
 
     if (password === passwordConfirmation) {
         alert("Usuário " + username + " registrado!") 
-        //console.log({ username, password, passwordConfirmation })
     } else {
         alert("As senhas não conferem!")
     } 
