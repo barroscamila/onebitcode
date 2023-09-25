@@ -12,14 +12,14 @@ document.getElementById("type").addEventListener("click", function () {
     //input.setAttribute("type", "radio") // outra forma de alterar
 })
 
-document.getElementById("placeholder").addEventListener("click", function (){
+document.getElementById("placeholder").addEventListener("click", function ( ){
     input.placeholder = "Digite algo..."
 })
 
 document.getElementById("disable").addEventListener("click", function () {
     // OBS: o atributo 'disabled' retorna valores booleanos
-    //input.disabled = input.disabled === true ? false : true
-    input.setAttribute("disabled", !input.disabled) 
+    input.disabled = input.disabled === true ? false : true
+    //input.setAttribute("disabled", !input.disabled) 
 })
 
 document.getElementById("data").addEventListener("click", function () {

@@ -60,22 +60,24 @@ addTechBtn.addEventListener("click", function (ev){
 })
 
 form.addEventListener("submit", function (ev){
-    ev.preventDefault()
+    ev.preventDefault() // nao ira atualizar a pagina
 
     //capturar valores do form:
-    const fullnameInput = document.getElementById("fullname").value
-    const inputRows = document.querySelectorAll(".inputRow") //pegar todas as linhas
+    const fullnameInput = document.getElementById("fullname")
+    const inputRows = document.querySelectorAll(".inputRow") // pegar todas as linhas de mesma classe
 
     let technologies = []
     inputRows.forEach(function (row) {
         // #rowId input[name="techName"]  -> pegando o input da linha específica 
         const techName = document.querySelector("#" + row.id + " input[name='techName']").value
+
         // #rowId input[type="radio"]:checked -> pegando o input radio marcado
         const techExp = document.querySelector("#" + row.id + " input[type='radio']:checked").value
+
         technologies.push({ name: techName, exp: techExp })
     })
 
-    const newDev = { fullname: fullnameInput, technologies: technologies }
+    const newDev = { fullname: fullnameInput.value, technologies: technologies }
     developers.push(newDev)
     alert("Dev cadastrato com sucesso!")
 
