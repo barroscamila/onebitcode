@@ -11,18 +11,21 @@
   <h1>Recursos de Armazenamento do Navegador</h1>
   <hr>
 
+  <!-- forma mais simples de armazenas os dados; as informacoes salvadas existem enquanto a aba/janela estiver aberta -->
   <h2>Session Storage</h2>
   <label for="session">Digite uma informação:</label>
   <input type="text" id="session">
   <button id="sessionBtn">Guardar!</button>
   <button id="readSession">Ler</button>
 
+  <!-- diferente do session storage, a local storage armazena as informacoes mesmo apos fechar a aba/janela do navegador; ficam armazenadas ate serem removidas -->
   <h2>Local Storage</h2>
   <label for="local">Digite uma informação:</label>
   <input type="text" id="local">
   <button id="localBtn">Guardar!</button>
   <button id="readLocal">Ler</button>
 
+  <!-- dados armazenados em pequenos arquivos de texto no computador do cliente; podem possuir data de expiracao; cookies podem ser enviados nas requisicoes, e tambem podem ser salvas no backend -->
   <h2>Cookies</h2>
   <label for="cookie">Digite uma informação:</label>
   <input type="text" id="cookie">
