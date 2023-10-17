@@ -17,7 +17,7 @@ body {
 #gameBoard span {
     background-color: #ddd;
     display: grid;
-    place-content: center; /* O conteúdo do elemento ficará centralizado (utilizando display grid)*/
+    place-content: center; /* O conteúdo do elemento ficará centralizado horizontalmente e verticalmente (utilizando display grid)*/
     font-size: 5rem;
 }
 

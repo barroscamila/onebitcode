@@ -1,13 +1,15 @@
 const boardRegions = document.querySelectorAll('#gameBoard span')
-let vBoard = [] // tabuleiro virtual 
+let vBoard = [] // tabuleiro virtual, o qual ajudara a verificar a vitoria de um jogador
 let turnPlayer = ''
 
+// funcao para alterar o jogador da vez
 function updateTitle() {
     const playerInput = document.getElementById(turnPlayer)
     document.getElementById('turnPlayer').innerText = playerInput.value
 }
 
-function initializeGame() { // inicializar o jogo (preparar o tabuleiro)
+// inicializar o jogo (preparar o tabuleiro)
+function initializeGame() { 
     vBoard = [['', '', ''], ['', '', ''], ['', '', '']]
     turnPlayer = 'player1'
     document.querySelector('h2').innerHTML = 'Vez de: <span id="turnPlayer"></span>'
@@ -20,6 +22,7 @@ function initializeGame() { // inicializar o jogo (preparar o tabuleiro)
     })
 }
 
+// verificacao se o jogador atual ganhou
 function getWinRegions() {
     const winRegions = []
     if (vBoard[0][0] && vBoard[0][0] === vBoard[0][1] && vBoard[0][0] === vBoard[0][2])
@@ -41,11 +44,13 @@ function getWinRegions() {
     return winRegions
 }
 
+// desabilitar uma area para nao ser mais clicada durante o jogo
 function disableRegion(element) {
     element.classList.remove('cursor-pointer')
     element.removeEventListener('click', handleBoardClick)
 }
 
+// funcao referente a vitoria de um dos jogadores
 function handleWin(regions) {
     regions.forEach(function (region){
         document.querySelector('[data-region="' + region + '"]' ).classList.add('win')
@@ -54,6 +59,7 @@ function handleWin(regions) {
     document.querySelector('h2').innerHTML = playerName + " venceu!"
 }
 
+// funcao referente aos cliques no tabuleiro
 function handleBoardClick(ev) {
     const span = ev.currentTarget
     const region = span.dataset.region // N.N
@@ -69,7 +75,7 @@ function handleBoardClick(ev) {
     }
     console.clear() // limpar o console
     console.table(vBoard) // o console tenta mostrar os dados em formato de tabela, se for possível
-    disableRegion(span)
+    disableRegion(span) // desabilitar uma area que ja foi clicada
     const winRegions = getWinRegions()
     if (winRegions.length > 0) {
         handleWin(winRegions)
