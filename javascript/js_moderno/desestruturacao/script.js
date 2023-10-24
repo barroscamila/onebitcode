@@ -5,23 +5,29 @@ const person = {
 }
 
 //  Forma tradicional
+
 const name = person.name 
+console.log(name)
+
 
 // Desestruturação (Objeto)
-const { job, parents } = person
 
-console.log(name. job, parents)
+const { job, parents } = person
+console.log(name, job, parents)
+
 
 // Desestruturação (Array)
-const [father, mother] = parents 
 
-console.log(father, mother)
+const [ father, mother ] = parents 
+console.log(father, "and", mother)
+
+
 
 // Desestruturação (Funções)
 
 /*
 function createUser(person) {
-    const id = Math.floor(Math.random() * 999)
+    const id = Math.floor(Math.random() * 9999)
     return {
         id,
         name: person.name,
@@ -42,5 +48,6 @@ function createUser({ name, job, parents }) {
 }
 
 const luke = createUser(person)
-
 console.log(luke)
+
+// ao invés de passar o objeto, está sendo passando as variaveis conforme as propriedades do objeto (desestruturacao)
