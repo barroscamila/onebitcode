@@ -7,6 +7,7 @@ const avarage = (...numbers) => {
 
 console.log(`Média Aritimética Simples: ${avarage(3, 6, 10, 9)}.`)
 
+
 // MEDIA ARITIMETICA PONDERADA
 
 const weightAvarage = (...entries) => {
@@ -20,6 +21,7 @@ console.log(`Média Aritimética Ponderada: ${weightAvarage(
     { number: 7 },
     { number: 10, weight: 1 },
 )}.`)
+
 
 // MEDIANA
 
@@ -38,6 +40,7 @@ const median = (...numbers) => {
 
 console.log(`Mediana: ${median(2, 5, 99, 4, 42, 7)}.`)
 console.log(`Mediana: ${median(15, 14, 8, 7, 3)}.`)
+
 
 // MODA
 
