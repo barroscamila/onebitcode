@@ -15,7 +15,7 @@ townsCopy.pop()
 townsCopy.push('Juno') 
 console.log({ townsCopy, towns }) // 'townsCopy' e 'town' foram alteradas, pois o JS trabalha com referencias
 
-const townsClone = [...towns] // criação de uma cópia d array, de fato, através do operador spread
+const townsClone = [...towns] // criação de uma cópia do array, de fato, através do operador spread
 townsClone.push('Aldebaran')
 console.log({ towns, townsCopy, townsClone })
 
