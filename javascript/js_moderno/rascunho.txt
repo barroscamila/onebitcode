@@ -58,12 +58,12 @@
 -> Módulos são agrupamentos de códigos com funcionalidades distintas, podendo serem compartilhados, adicionados ou removidos.
 -> Os módulos permitem aplicar o JS de forma mais organizada.
 -> Motivos para utilizar:
-    - Manutenibilidade (facilita manutenção)
+    - Manutenibilidade (facilita a manutenção)
     - Namespacing (evita conflito de nomes)
     - Reusabilidade (reaproveitamento dos códigos)
 -> Formas de utilizar
-    - CommonJS  (forma tradicional, não funciona nos navegadores)
-    - ES Modules (JS moderno) 
+    - CommonJS  (forma mais tradicional, não funciona nos navegadores)
+    - ES Modules (JS moderno) --> type:"module"/import/export
 
 ## npm (node package manager)
 

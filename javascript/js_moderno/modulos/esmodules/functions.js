@@ -16,3 +16,5 @@ export function br() {
     const element = document.createElement('br')
     return element
 }
+
+// 'export' pode ser inserido anteriormente a uma variável ou a uma função
