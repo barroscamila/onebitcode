@@ -1,6 +1,19 @@
 # Aula 2
 
+Os objetos podem ter dados (atributos) e métodos (códigos)
 this. --> permite acessar as propriedades do objeto 
 funções construtoras --> utilizada para criar objetos. 
     Utiliza o 'Pascal case'
     Para criar uma novo objeto, utilizar o parâmetro 'new' antes do nome da função construtora. Ex: const objeto = new Function() {}
+
+# Aula 3
+
+POO --> É um paradigma de programaçã, ou seja, um conjunto de conceitos e recursos de linguagem que guiam a forma como programamos
+        Tem como peça principal os objetos e a forma que eles se comunicam
+Classes --> São uma espécie de fábrica de objetos, a partir de uma "fôrma". OBS: Semelhante as funções construtoras
+Instâncias --> São os objetos fabricados pelas Classes
+
+
+
+
+
