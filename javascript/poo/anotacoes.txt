@@ -1,0 +1,6 @@
+# Aula 2
+
+this. --> permite acessar as propriedades do objeto 
+funções construtoras --> utilizada para criar objetos. 
+    Utiliza o 'Pascal case'
+    Para criar uma novo objeto, utilizar o parâmetro 'new' antes do nome da função construtora. Ex: const objeto = new Function() {}
