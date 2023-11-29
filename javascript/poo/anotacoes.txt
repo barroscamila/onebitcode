@@ -13,7 +13,9 @@ POO --> É um paradigma de programaçã, ou seja, um conjunto de conceitos e rec
 Classes --> São uma espécie de fábrica de objetos, a partir de uma "fôrma". OBS: Semelhante as funções construtoras
 Instâncias --> São os objetos fabricados pelas Classes
 
+#  Aula 8
 
+Associações --> Relacionamentos entre classes, o qual permite que uma instância de uma classa faça a outra realizar uma ação. "Um objeto de um tipo está conectado, ou depende, de um objeto de outro tipo"
 
 
 
