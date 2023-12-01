@@ -17,5 +17,10 @@ Instâncias --> São os objetos fabricados pelas Classes
 
 Associações --> Relacionamentos entre classes, o qual permite que uma instância de uma classa faça a outra realizar uma ação. "Um objeto de um tipo está conectado, ou depende, de um objeto de outro tipo"
 
+# Aula 11
+
+Encapsulamento --> Princípio de impedir que determinadas partes de uma classe sejam acessíveis pelo contexto exterior
+Níveis de Encapsulamento no JS --> Público: atributo/método é acessível fora da classe
+                                   Privado:  atributo/método é acessível dentro da propria classe (utilizar # no inicio do nome)
 
 
