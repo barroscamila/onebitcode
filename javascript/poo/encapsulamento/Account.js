@@ -1,13 +1,14 @@
 class Account {
     #password
-    #balance = 0
+    #balance = 0 // valor padrao
+    
     constructor(user) {
         this.email = user.email
         this.#password = user.password
         // this.#balance = 0
     }
 
-    //metodo para conseguir ler o balance de forma segura, por exemplo
+    //metodo para conseguir ler o balance de forma segura, por exemplo 
     getBalance(email, password) {
         if (this.#authenticate(email, password)) {
             return this.#balance
