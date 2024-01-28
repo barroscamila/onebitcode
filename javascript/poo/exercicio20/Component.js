@@ -8,7 +8,7 @@ export class Component {
         this.build()
     }
 
-    getElemet() {
+    getElement() {
         return this.#element
     }
 
