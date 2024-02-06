@@ -12,14 +12,14 @@ function sum(a, b) {
 }
 
 // o try + catch pode ser utilizado para lidar com o erro, uma forme de contornar o erro ("plano B")
-// o finaly
+// o finaly serve para encerrar o tratamento do erro
 try {
     console.log(sum(2,9))
     console.log(sum(true, 14))
-    // console.log(sum(undefined, 22))
+    console.log(sum(undefined, 22))
     console.log(sum(18, "0"))
     console.log(sum(39, null))
-    // console.log(sum(13, "zero"))
+    console.log(sum(13, "zero"))
 } catch (error) {
     console.log('An error ocorred!')
     // console.log(error) // mostra as informacoes do erro, padrão do JS
