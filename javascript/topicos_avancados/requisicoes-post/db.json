@@ -1,0 +1,40 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "Olá, mundo!",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "id": "2",
+      "title": "Requisições POST com Javascript",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "id": "88fa",
+      "title": "Teste",
+      "author": "Camila",
+      "content": {}
+    },
+    {
+      "id": "dd5f",
+      "title": "Teste 2",
+      "author": "Camila",
+      "content": "Testandooo...."
+    },
+    {
+      "id": "8a48",
+      "title": "Teste 3",
+      "author": "Camila",
+      "content": "Teste 3"
+    },
+    {
+      "id": "ca74",
+      "title": "Teste 4",
+      "author": "Camila",
+      "content": "Console.log(teste)"
+    }
+  ]
+}
