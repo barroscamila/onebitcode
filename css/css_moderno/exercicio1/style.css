@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    align-items: center;
+}
+
+.logo-rock {
+    width: 40px;
+}
+
+.logo-onebitcode {
+    width: 200px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;  /* espaco apenas entre os itens, nesse caso eh melhor do que usar margin */
+}
+
+.btn-header {
+    font-size: 20x;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-header:hover {
+    border-color: #ff0044;
+    transition: 0.4s;
+}
+

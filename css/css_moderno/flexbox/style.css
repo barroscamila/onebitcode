@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: darkgray;
+    min-height: 100vh;   /* altura minima */
+    display: flex;  /* fle e flexbox é a mesma coisa */
+    /* flex-direction: row; (padrão) */
+    gap: 0px 15px; /* colunas linhas */
+    justify-content: center; /* centralização horizontal (eixo principal) */
+    align-items: center; /* centralização horizontal (eixo secundario) */
+    flex-wrap: wrap;
+
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    font: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
