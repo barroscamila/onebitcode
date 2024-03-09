@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: darkgray;
+    min-height: 100vh; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 1fr 2fr 1fr | usar sempre frames ou procentagens */
+    gap: 10px 15px;
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-auto-rows: minmax(210px, 100%);
+}
+
+.item {
+    background-color: white;
+    border: 2px solid black;
+    font-size: 30px;
+}
+

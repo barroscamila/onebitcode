@@ -8,36 +8,42 @@
     background-color: darkgray;
     min-height: 100vh;   /* altura minima */
     display: flex;  /* fle e flexbox é a mesma coisa */
-    /* flex-direction: row; (padrão) */
+    flex-direction: row; /* row é o padrão */ 
     gap: 0px 15px; /* colunas linhas */
     justify-content: center; /* centralização horizontal (eixo principal) */
     align-items: center; /* centralização horizontal (eixo secundario) */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
 }
 
 .item {
-    /* width: 200px; */
-    height: 200px;
+    width: 100%;
+    height: 70px;
     background-color: white;
     border: 2px solid black;
     font: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 200px;  /* definicao do tamanho basico do item */
-    flex-grow: 0;  /* 0 -> inativado  | 1 -> ativado (considera o tamanho base para)*/
 }
 
 .item1 {
-    
+    align-self: flex-start;  /* alinhamento proprio dos itens na vertical */
+    order: 2;
 }
 
 .item2 {
-
+    /* flex: 1 0 400px; grow shrink basis */
+    order: 3;
 }
 
 .item3 {
+    order: 1;
+}
 
+@media (max-width: 390px) {
+    .item2 {
+        flex: 1 0 620px;
+    }
 }
 
