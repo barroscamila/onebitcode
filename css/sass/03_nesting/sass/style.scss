@@ -1,0 +1,32 @@
+// .classe1 ul {
+//     background-color: red;
+// }
+
+// .classe1 li {
+//     background-color: blue;
+// }
+
+// O nesting permite agrupar elementos dentro de uma classe, para facilitar a edição do código (diminui as linhas do código)
+// utiliza-se o '&' para referenciar o proprio elemento
+
+.classe1 {
+    ul {
+        background-color: red;
+    }
+
+    li{
+        background-color: blue;
+        padding: 10px 0px;
+    }
+
+    button {
+        background-color: green;
+        color: wheat;
+        cursor: pointer;
+
+        &:hover {
+            background-color: red;
+            transition: 0.5s;
+        }
+    }
+}

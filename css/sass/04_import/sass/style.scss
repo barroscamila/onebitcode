@@ -1,0 +1,6 @@
+// Import Colors 
+// OBS: é importante que colors.scss seja importado primeiro, visto que as variaveis estao sendo utilizadas no home.scss
+@import "./colors/colors.scss";
+
+// Import Home 
+@import "./pages/home.scss";

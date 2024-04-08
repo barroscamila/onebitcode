@@ -1,0 +1,15 @@
+// para definir uma variavel utilizamos o '$'
+// ao editar uma variavel em sua definição, já é editado em todo o codigo scss
+
+$btn-color: #ff4043;
+$btn-width: 95px;
+
+.btn1 {
+    width: $btn-width;
+    background-color: $btn-color;
+}
+
+.btn2 {
+    width: $btn-width;
+    background-color: $btn-color;
+}
