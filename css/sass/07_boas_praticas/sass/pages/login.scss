@@ -1,0 +1,5 @@
+.container {
+    p {
+        @include txt-style($primary-color, 16px, Arial)
+    }
+}
