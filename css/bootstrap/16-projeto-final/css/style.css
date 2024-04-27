@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;514&display=swap");
+* {
+  color: white;
+}
+
+.header {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+​.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrowDown {
+  display: inline-block;
+  width: 90px;
+  margin-top: 5px;
+}
+
+.logoPC {
+  width: 240px;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+
+.container00.container01 {
+  background-image: url(../images/home/1.jpg);
+}
+.container00.container02 {
+  background-image: url(../images/home/2.jpg);
+}
+.container00.container03 {
+  background-image: url(../images/home/3.gif);
+}
+.container00.container04 {
+  background-image: url(../images/home/4.jpg);
+}
+
+/*# sourceMappingURL=style.css.map */
