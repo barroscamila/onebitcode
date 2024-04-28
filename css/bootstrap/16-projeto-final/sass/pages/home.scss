@@ -15,3 +15,39 @@
         background-image: url(../images/home/4.jpg);
     }
 }
+
+.titlePadding {
+    padding-top: 200px;
+}
+
+.shortTitle {
+    width: 550px;
+    margin-bottom: 25px;
+}
+
+.mediumTitle {
+    width: 650px;
+    margin-bottom: -25px;
+}
+
+// Media Query
+
+@media (max-width: 750px) {
+    .titlePadding {
+        padding-top: 120px;
+    }
+
+    .shortTitle, 
+    .mediumTitle {
+        width: auto;
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 350px) {
+    .shortTitle, 
+    .mediumTitle {
+        width: auto;
+        font-size: 20px;
+    }
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;514&display=swap");
 * {
   color: white;
@@ -8,8 +7,14 @@
   font-size: 12px;
   font-weight: bold;
 }
+.header #navItem {
+  color: white;
+}
+.header #navItem:hover {
+  color: #b9b9b9;
+}
 
-​.container00 {
+.container00 {
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,9 +30,49 @@
 .logoPC {
   width: 240px;
   margin-left: -10px;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
+#button {
+  padding: 15px 35px;
+  border: 2px solid white;
+}
+
+.footer {
+  background-color: black;
+  height: 15vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  color: #b9b9b9;
+}
+.footer .copyOBC {
+  color: #555252;
+}
+
+@media (max-width: 450px) {
+  .logoPC {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .logoPC {
+    width: 150px;
+    margin-top: 15px;
+  }
+}
 .container00.container01 {
   background-image: url(../images/home/1.jpg);
 }
@@ -39,6 +84,187 @@
 }
 .container00.container04 {
   background-image: url(../images/home/4.jpg);
+}
+
+.titlePadding {
+  padding-top: 200px;
+}
+
+.shortTitle {
+  width: 550px;
+  margin-bottom: 25px;
+}
+
+.mediumTitle {
+  width: 650px;
+  margin-bottom: -25px;
+}
+
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+  .shortTitle,
+  .mediumTitle {
+    width: auto;
+    font-size: 50px;
+  }
+}
+@media (max-width: 350px) {
+  .shortTitle,
+  .mediumTitle {
+    width: auto;
+    font-size: 20px;
+  }
+}
+.container00.container05 {
+  background-image: url(../images/falcon9/01.jpg);
+}
+.container00.container06 {
+  background-image: url(../images/falcon9/02.jpg);
+}
+.container00.carrossel01 {
+  background-image: url(../images/falcon9/03.jpg);
+}
+.container00.carrossel02 {
+  background-image: url(../images/falcon9/04.jpg);
+}
+.container00.carrossel03 {
+  background-image: url(../images/falcon9/05.jpg);
+}
+.container00.carrossel04 {
+  background-image: url(../images/falcon9/06.jpg);
+}
+.container00.carrossel05 {
+  background-image: url(../images/falcon9/07.jpg);
+}
+.container00.container07 {
+  background-image: url(../images/falcon9/08.jpg);
+}
+
+.titleFalcon9 {
+  font-size: 90px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 514;
+}
+
+.titleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.numbers {
+  background-color: black;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.numbers .titleNumb {
+  font-size: 90px;
+}
+.numbers .subTitleNumb {
+  font-size: 20px;
+}
+
+.falcon9Desc {
+  font-size: 22px;
+  width: 640px;
+  line-height: 50px;
+}
+
+.containerFalcon9Desc {
+  display: grid;
+  height: 90vh;
+  align-items: center;
+  justify-content: left;
+}
+
+#overViewPosition {
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+
+.carrosselSlide img {
+  height: 100vh;
+}
+
+.carousselText {
+  background-color: black;
+}
+
+.downloadDesc {
+  background-color: black;
+  height: 85vh;
+  padding-top: 240px;
+}
+.downloadDesc a {
+  text-decoration: none;
+  color: #b9b9b9;
+}
+.downloadDesc a:hover {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .numbers p {
+    font-size: 18px;
+  }
+  .falcon9Desc {
+    font-size: 26px;
+  }
+  #overViewPosition {
+    display: block;
+    width: 500px;
+    margin-left: 13%;
+    padding-top: 20%;
+  }
+}
+@media (max-width: 510px) {
+  .downloadDesc button {
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 425px) {
+  .titleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+  }
+  .titleFalcon9 {
+    font-size: 50px;
+  }
+  .numbers h1 {
+    font-size: 40px;
+  }
+  .numbers p {
+    font-size: 14px;
+  }
+  .containerFalcon9Desc p {
+    width: auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #overViewPosition {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin-left: auto;
+  }
+  .titleOverView {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .subTitleOvewView {
+    font-size: 20px;
+    font-weight: 300;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
