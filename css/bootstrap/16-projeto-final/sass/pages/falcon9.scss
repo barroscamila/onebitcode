@@ -90,21 +90,6 @@
     background-color: black;
 }
 
-.downloadDesc {
-    background-color: black;
-    height: 85vh;
-    padding-top: 240px;
-
-    a {
-        text-decoration: none;
-        color: $link-hover;
-
-        &:hover {
-            color: white;
-        }
-    }
-}
-
 // Media Query
 
 @media (max-width: 1024px) {

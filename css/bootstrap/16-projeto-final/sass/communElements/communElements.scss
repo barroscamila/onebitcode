@@ -29,6 +29,21 @@
     margin-right: 40px;
 }
 
+.downloadDesc {
+    background-color: black;
+    height: 85vh;
+    padding-top: 240px;
+}
+
+.emailObc {
+    text-decoration: none;
+        color: $link-hover;
+
+    &:hover {
+        color: white;
+    }
+}
+
 #button {
     padding: $padding-button;
     border: 2px solid white;
